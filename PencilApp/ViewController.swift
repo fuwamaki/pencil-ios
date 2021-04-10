@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import PencilKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let canvas = PKCanvasView(frame: view.frame)
+        canvas.drawingPolicy = .anyInput
+        view.addSubview(canvas)
+        canvas.tool = PKInkingTool(.marker, color: .yellow, width: 30)
     }
-
-
 }
-
