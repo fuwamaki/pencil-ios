@@ -20,32 +20,52 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="816"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko0-Rd-jm6">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="p1A-HO-IDe">
                                 <rect key="frame" x="0.0" y="816" width="414" height="80"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="VsJ-s4-ySM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="24"/>
-                                <state key="normal" title="RESET">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0uf-xs-20j"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko0-Rd-jm6">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="VsJ-s4-ySM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="24"/>
+                                        <state key="normal" title="RESET">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0uf-xs-20j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJo-0f-GLM">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="gkl-3A-Zkj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="24"/>
+                                        <state key="normal" title="CHECK">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickCheckButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="crP-yA-QHr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ko0-Rd-jm6" secondAttribute="trailing" id="0V7-hs-EQx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p1A-HO-IDe" secondAttribute="trailing" id="0A6-4d-5Ph"/>
+                            <constraint firstItem="p1A-HO-IDe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BFB-9E-jx1"/>
                             <constraint firstItem="rXA-ji-QBh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EhC-A1-2dc"/>
+                            <constraint firstAttribute="bottom" secondItem="p1A-HO-IDe" secondAttribute="bottom" id="IL7-hE-S7C"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rXA-ji-QBh" secondAttribute="trailing" id="S45-Ky-BRr"/>
-                            <constraint firstItem="Ko0-Rd-jm6" firstAttribute="top" secondItem="rXA-ji-QBh" secondAttribute="bottom" id="WWn-W0-N4f"/>
+                            <constraint firstItem="p1A-HO-IDe" firstAttribute="top" secondItem="rXA-ji-QBh" secondAttribute="bottom" id="WbE-EW-WbK"/>
                             <constraint firstItem="rXA-ji-QBh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xgg-e2-LYc"/>
-                            <constraint firstAttribute="bottom" secondItem="Ko0-Rd-jm6" secondAttribute="bottom" id="gpE-bS-DGW"/>
-                            <constraint firstItem="Ko0-Rd-jm6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y4R-fx-Oa2"/>
                         </constraints>
                     </view>
                     <connections>
