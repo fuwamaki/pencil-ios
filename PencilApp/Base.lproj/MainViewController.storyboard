@@ -15,9 +15,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXA-ji-QBh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="816"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko0-Rd-jm6">
+                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="VsJ-s4-ySM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="24"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0uf-xs-20j"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ko0-Rd-jm6" secondAttribute="trailing" id="0V7-hs-EQx"/>
+                            <constraint firstItem="rXA-ji-QBh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EhC-A1-2dc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rXA-ji-QBh" secondAttribute="trailing" id="S45-Ky-BRr"/>
+                            <constraint firstItem="Ko0-Rd-jm6" firstAttribute="top" secondItem="rXA-ji-QBh" secondAttribute="bottom" id="WWn-W0-N4f"/>
+                            <constraint firstItem="rXA-ji-QBh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xgg-e2-LYc"/>
+                            <constraint firstAttribute="bottom" secondItem="Ko0-Rd-jm6" secondAttribute="bottom" id="gpE-bS-DGW"/>
+                            <constraint firstItem="Ko0-Rd-jm6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y4R-fx-Oa2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="paintView" destination="rXA-ji-QBh" id="2aB-mb-sts"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -25,8 +58,14 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
