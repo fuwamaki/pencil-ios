@@ -37,6 +37,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		205822A92621E98A00BAC1C6 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				20A9CE2E2621A9FF00BEE7A0 /* AppDelegate.swift */,
+				20A9CE302621A9FF00BEE7A0 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		205822AA2621EA9700BAC1C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20A9CE372621AA0000BEE7A0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		205822AB2621EAA300BAC1C6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				20A9CE392621AA0000BEE7A0 /* LaunchScreen.storyboard */,
+				20A9CE342621A9FF00BEE7A0 /* MainViewController.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		205822AC2621EAB100BAC1C6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				20A9CE322621A9FF00BEE7A0 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		20A9CE222621A9FF00BEE7A0 = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				20A9CE3C2621AA0000BEE7A0 /* Info.plist */,
-				20A9CE2E2621A9FF00BEE7A0 /* AppDelegate.swift */,
-				20A9CE302621A9FF00BEE7A0 /* SceneDelegate.swift */,
-				20A9CE322621A9FF00BEE7A0 /* MainViewController.swift */,
-				20A9CE342621A9FF00BEE7A0 /* MainViewController.storyboard */,
-				20A9CE372621AA0000BEE7A0 /* Assets.xcassets */,
-				20A9CE392621AA0000BEE7A0 /* LaunchScreen.storyboard */,
+				205822A92621E98A00BAC1C6 /* AppDelegate */,
+				205822AC2621EAB100BAC1C6 /* ViewController */,
+				205822AB2621EAA300BAC1C6 /* Storyboard */,
+				205822AA2621EA9700BAC1C6 /* Resources */,
 				20A9CE2C2621A9FF00BEE7A0 /* Products */,
 			);
 			path = PencilApp;
