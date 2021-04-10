@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205822B02621EB4300BAC1C6 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205822AF2621EB4300BAC1C6 /* Toast.swift */; };
 		20A9CE2F2621A9FF00BEE7A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A9CE2E2621A9FF00BEE7A0 /* AppDelegate.swift */; };
 		20A9CE312621A9FF00BEE7A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A9CE302621A9FF00BEE7A0 /* SceneDelegate.swift */; };
 		20A9CE332621A9FF00BEE7A0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A9CE322621A9FF00BEE7A0 /* MainViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		205822AF2621EB4300BAC1C6 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		20A9CE2B2621A9FF00BEE7A0 /* PencilApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PencilApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A9CE2E2621A9FF00BEE7A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20A9CE302621A9FF00BEE7A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		205822AE2621EB2700BAC1C6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				205822AF2621EB4300BAC1C6 /* Toast.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		20A9CE222621A9FF00BEE7A0 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 				20A9CE3C2621AA0000BEE7A0 /* Info.plist */,
 				205822A92621E98A00BAC1C6 /* AppDelegate */,
 				205822AC2621EAB100BAC1C6 /* ViewController */,
+				205822AE2621EB2700BAC1C6 /* Util */,
 				205822AB2621EAA300BAC1C6 /* Storyboard */,
 				205822AA2621EA9700BAC1C6 /* Resources */,
 				20A9CE2C2621A9FF00BEE7A0 /* Products */,
@@ -171,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20A9CE332621A9FF00BEE7A0 /* MainViewController.swift in Sources */,
+				205822B02621EB4300BAC1C6 /* Toast.swift in Sources */,
 				20A9CE2F2621A9FF00BEE7A0 /* AppDelegate.swift in Sources */,
 				20A9CE312621A9FF00BEE7A0 /* SceneDelegate.swift in Sources */,
 			);
